@@ -1,0 +1,117 @@
+/*================================================
+Subscribe Area CSS
+=================================================*/
+$main-font-family: 'Open Sans', sans-serif;
+$optional-font-family: 'Dosis', sans-serif;
+$main-color: black;
+$gradient-color: linear-gradient(to right top, black, black, #333333, #333333, #333333);
+$optional-color: #ffac00;
+$optional-gradient-color: linear-gradient(to right, #ffac00, #ffac00, #ffac00, #faa01f, #f7b733);
+$white-color: #ffffff;
+$black-color: #333333;
+$paragraph-color: #57647c;
+$font-size: 14px;
+$transition: .5s;
+
+.newsletter-content {
+    h2 {
+        margin-bottom: 0;
+        letter-spacing: 2px;
+        font: {
+            size: 26px;
+            weight: 700;
+        }
+    }
+    form {
+        margin-top: 20px;
+        position: relative;
+
+        .input-newsletter {
+            display: block;
+            width: 100%;
+            background-color: #f7f9fc;
+            border: none;
+            color: $black-color;
+            padding-left: 15px;
+            height: 45px;
+            border-radius: 5px;
+            outline: 0;
+
+            &::placeholder {
+                color: #999999;
+            }
+        }
+        button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 45px;
+            border: none;
+            background-color: $optional-color;
+            color: $white-color;
+            border-radius: 0 5px 5px 0;
+            transition: $transition;
+            line-height: 43px;
+            padding: {
+                left: 22px;
+                right: 22px;
+            }
+            font: {
+                size: 16px;
+                weight: 700;
+                family: $optional-font-family;
+            }
+            i {
+                margin-left: 5px;
+            }
+            &:hover {
+                background-color: $main-color;
+                color: $white-color;
+            }
+        }
+        .validation-danger {
+            margin-top: 5px;
+            color: red;
+        }
+        .validation-success {
+            margin-top: 5px;
+        }
+    }
+}
+.subscribe-contact-info {
+    margin-top: 60px;
+    padding-left: 50px;
+
+    .content {
+        display: inline-block;
+        margin-left: 50px;
+        text-align: center;
+
+        h2 {
+            margin-bottom: 0;
+            letter-spacing: 2px;
+            font: {
+                size: 26px;
+                weight: 700;
+            }
+        }
+        span {
+            display: block;
+            color: $optional-color;
+            margin-top: 10px;
+            font: {
+                size: 26px;
+                weight: 600;
+                family: $optional-font-family;
+            }
+            a {
+                display: inline-block;
+                color: $optional-color;
+
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}

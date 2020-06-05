@@ -1,0 +1,148 @@
+/*================================================
+Feedback Area CSS
+=================================================*/
+@import '../../../../styles';
+
+.feedback-area {
+    background: $gradient-color;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: {
+        bottom: 80px;
+        top: 220px;
+    }
+    .section-title {
+        h2 {
+            color: $white-color;
+        }
+        p {
+            color: $white-color;
+        }
+    }
+}
+.single-feedback-item {
+    position: relative;
+    margin: {
+        left: 25px;
+        top: 25px;
+        bottom: 30px;
+    }
+    .feedback-desc {
+        background-color: $white-color;
+        border-radius: 5px;
+        position: relative;
+        z-index: 1;
+        padding: {
+            left: 30px;
+            bottom: 30px;
+            right: 30px;
+            top: 40px;
+        }
+        p {
+            margin-bottom: 0;
+            position: relative;
+            font: {
+                size: 15px;
+                style: italic;
+            }
+            &::before {
+                content: '"';
+                position: relative;
+                display: inline-block;
+                left: 0;
+                color: $paragraph-color;
+            }
+            &::after {
+                content: '"';
+                position: relative;
+                display: inline-block;
+                right: 0;
+                color: $paragraph-color;
+            }
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            left: 35px;
+            bottom: -12px;
+            width: 25px;
+            height: 25px;
+            z-index: -1;
+            background: $white-color;
+            transform: rotate(45deg);
+        }
+    }
+    &::before {
+        transition: $transition;
+        content: "\ecff";
+        position: absolute;
+        left: 0;
+        top: -25px;
+        left: -25px;
+        color: $optional-color;
+        background-color: #08756f;
+        width: 60px;
+        height: 60px;
+        line-height: 61px;
+        border-radius: 50%;
+        z-index: 2;
+        text-align: center;
+        font: {
+            family: 'boxicons'!important;
+            weight: normal;
+            style: normal;
+            variant: normal;
+            size: 30px;
+        }
+    }
+    .client-info {
+        position: relative;
+        padding-left: 58px;
+        margin: {
+            top: 32px;
+            bottom: 25px;
+            left: 27px;
+        }
+        img {
+            width: 45px !important;
+            height: 45px !important;
+            display: inline-block !important;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: $transition;
+        }
+        h3 {
+            margin-bottom: 0;
+            color: $white-color;
+            font: {
+                size: 18px;
+                weight: 600;
+            }
+        }
+        span {
+            display: block;
+            color: $optional-color;
+            margin-top: 4px;
+            font: {
+                family: $optional-font-family;
+                weight: 600;
+            }
+        }
+    }
+}
+.feedback-shape {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.shape-rectangle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -2;
+}

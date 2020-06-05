@@ -1,0 +1,577 @@
+
+/*================================================
+Navbar Area CSS
+=================================================*/
+@import '../../../../styles';
+// .navbar-brand {
+//     padding: {
+//         top: 0;
+//         bottom: 0;
+//     }
+// }
+.evolta-nav {
+    background-color: transparent;
+    padding: {
+        top: 15px;
+        bottom: 15px;
+        right: 15px;
+        left: 15px;
+    }
+    .navbar {
+        padding: {
+            right: 0;
+            top: 0;
+            left: 0;
+            bottom: 0;
+        }
+        ul {
+            padding-left: 0;
+            list-style-type: none;
+            margin-bottom: 0;
+        }
+        .navbar-nav {
+            font-family: $optional-font-family;
+            margin-left: auto;
+
+            .nav-item {
+                position: relative;
+                padding: {
+                    top: 15px;
+                    bottom: 15px;
+                    left: 0;
+                    right: 0;
+                }
+                a {
+                    font: {
+                        size: 17px;
+                        weight: 700;
+                    }
+                    color: $black-color;
+                    text-transform: capitalize;
+                    padding: {
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                    }
+                    margin: {
+                        left: 13px;
+                        right: 13px;
+                    }
+                    &:hover, &:focus, &.active {
+                        color: $optional-color;
+                    }
+                    i {
+                        font-size: 10px;
+                    }
+                    &::after {
+                        display: none !important;
+                    }
+                }
+                &:last-child {
+                    a {
+                        margin-right: 0;
+                    }
+                }
+                &:first-child {
+                    a {
+                        margin-left: 0;
+                    }
+                }
+                &:hover, &:focus, &.active {
+                    a {
+                        color: $optional-color;
+                    }
+                }
+                .dropdown-menu {
+                    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+                    background: $white-color;
+                    position: absolute;
+                    border: none;
+                    top: 80px;
+                    left: 0;
+                    width: 250px;
+                    z-index: 99;
+                    display: block;
+                    opacity: 0;
+                    visibility: hidden;
+                    border-radius: 0;
+                    transition: all 0.3s ease-in-out;
+                    padding: {
+                        top: 20px;
+                        left: 5px;
+                        right: 5px;
+                        bottom: 20px;
+                    }
+
+                    li {
+                        padding: 0;
+
+                        a {
+                            text-transform: capitalize;
+                            padding: 8px 15px;
+                            margin: 0;
+                            color: $black-color;
+                            font: {
+                                size: 16px;
+                            }
+                            &:hover, &:focus, &.active {
+                                color: $optional-color;
+                            }
+                        }
+                        .dropdown-menu {
+                            left: 220px;
+                            top: 0;
+                            opacity: 0;
+                            visibility: hidden;
+
+                            li {
+                                a {
+                                    color: $black-color;
+
+                                    &:hover, &:focus, &.active {
+                                        color: $optional-color;
+                                    }
+                                }
+                                .dropdown-menu {
+                                    left: 220px;
+                                    top: 0;
+                                    opacity: 0;
+                                    visibility: hidden;
+
+                                    li {
+                                        a {
+                                            color: $black-color;
+                                            text-transform: capitalize;
+
+                                            &:hover, &:focus, &.active {
+                                                color: $optional-color;
+                                            }
+                                        }
+                                        .dropdown-menu {
+                                            left: -250px;
+                                            top: 0;
+                                            opacity: 0;
+                                            visibility: hidden;
+
+                                            li {
+                                                a {
+                                                    color: $black-color;
+                                                    text-transform: capitalize;
+
+                                                    &:hover, &:focus, &.active {
+                                                        color: $optional-color;
+                                                    }
+                                                }
+                                                .dropdown-menu {
+                                                    left: -250px;
+                                                    top: 0;
+                                                    opacity: 0;
+                                                    visibility: hidden;
+
+                                                    li {
+                                                        a {
+                                                            color: $black-color;
+                                                            text-transform: capitalize;
+
+                                                            &:hover, &:focus, &.active {
+                                                                color: $optional-color;
+                                                            }
+                                                        }
+                                                        .dropdown-menu {
+                                                            left: -250px;
+                                                            top: 0;
+                                                            opacity: 0;
+                                                            visibility: hidden;
+
+                                                            li {
+                                                                a {
+                                                                    color: $black-color;
+                                                                    text-transform: capitalize;
+
+                                                                    &:hover, &:focus, &.active {
+                                                                        color: $optional-color;
+                                                                    }
+                                                                }
+                                                                .dropdown-menu {
+                                                                    left: -250px;
+                                                                    top: 0;
+                                                                    opacity: 0;
+                                                                    visibility: hidden;
+
+                                                                    li {
+                                                                        a {
+                                                                            color: $black-color;
+                                                                            text-transform: capitalize;
+
+                                                                            &:hover, &:focus, &.active {
+                                                                                color: $optional-color;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                &.active {
+                                                                    a {
+                                                                        color: $optional-color;
+                                                                    }
+                                                                }
+                                                                &:hover {
+                                                                    .dropdown-menu {
+                                                                        opacity: 1;
+                                                                        visibility: visible;
+                                                                        top: -15px;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        &.active {
+                                                            a {
+                                                                color: $optional-color;
+                                                            }
+                                                        }
+                                                        &:hover {
+                                                            .dropdown-menu {
+                                                                opacity: 1;
+                                                                visibility: visible;
+                                                                top: -15px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                &.active {
+                                                    a {
+                                                        color: $optional-color;
+                                                    }
+                                                }
+                                                &:hover {
+                                                    .dropdown-menu {
+                                                        opacity: 1;
+                                                        visibility: visible;
+                                                        top: -15px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.active {
+                                            a {
+                                                color: $optional-color;
+                                            }
+                                        }
+                                        &:hover {
+                                            .dropdown-menu {
+                                                opacity: 1;
+                                                visibility: visible;
+                                                top: -15px;
+                                            }
+                                        }
+                                    }
+                                }
+                                &.active {
+                                    a {
+                                        color: $optional-color;
+                                    }
+                                }
+                                &:hover {
+                                    .dropdown-menu {
+                                        opacity: 1;
+                                        visibility: visible;
+                                        top: -15px;
+                                    }
+                                }
+                            }
+                        }
+                        &.active {
+                            a {
+                                color: $optional-color;
+                            }
+                        }
+                        &:hover {
+                            .dropdown-menu {
+                                opacity: 1;
+                                visibility: visible;
+                                top: -15px;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    .dropdown-menu {
+                        opacity: 1;
+                        visibility: visible;
+                        top: 100%;
+                    }
+                }
+            }
+        }
+        .others-options {
+            margin-left: 20px;
+
+            .cart-btn {
+                display: inline-block;
+                position: relative;
+                top: 3px;
+                color: $white-color;
+
+                &:hover {
+                    color: $optional-color;
+                }
+            }
+            .btn {
+                margin-left: 15px;
+            }
+            .btn-primary {
+                color: $optional-color;
+
+                &::before {
+                    background: $white-color;
+                }
+                &::after {
+                    background: $optional-color;
+                }
+                &:hover {
+                    color: $white-color !important;
+                }
+            }
+            .option-item {
+                color: $black-color;
+                display: inline-block;
+                position: relative;
+                line-height: initial;
+                margin-left: 15px;
+                top: 4px;
+
+                .search-btn {
+                    cursor: pointer;
+                    transition: $transition;
+                    color: $white-color;
+
+                    &::before {
+                        font-size: 17px;
+                    }
+                    &:hover {
+                        color: $optional-color;
+                    }
+                }
+                .close-btn {
+                    cursor: pointer;
+                    display: none;
+                    font-size: 17px;
+                    transition: $transition;
+                    width: 17px;
+                    color: $white-color;
+
+                    &.active {
+                        display: block;
+                    }
+                    &:hover {
+                        color: $optional-color;
+                    }
+                }
+                a {
+                    color: $white-color;
+
+                    i {
+                        &::before {
+                            font-size: 17px;
+                        }
+                    }
+                    span {
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        background: $optional-gradient-color;
+                        border-radius: 50%;
+                        text-align: center;
+                        color: $black-color;
+                        line-height: 15px;
+                        position: relative;
+                        top: -12px;
+                        left: -12px;
+                        font: {
+                            weight: 600;
+                            size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.navbar-area {
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    transition: $transition;
+    z-index: 999;
+
+    &.is-sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+        background: $white-color !important;
+        animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+        transition: $transition;
+
+        .evolta-nav {
+            padding: {
+                top: 10px;
+                bottom: 10px;
+            }
+        }
+    }
+}
+.search-overlay {
+    display: none;
+
+    &.search-popup {
+        position: absolute;
+        top: 100%;
+        width: 300px;
+        right: 0;
+        background: $white-color;
+        z-index: 2;
+        padding: 20px;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+
+        .search-form {
+            position: relative;
+
+            .search-input {
+                display: block;
+                width: 100%;
+                height: 40px;
+                line-height: initial;
+                border: 1px solid #eeeeee;
+                padding-left: 10px;
+                color: $black-color;
+                outline: 0;
+                transition: $transition;
+
+                &:focus {
+                    border-color: $optional-color;
+                }
+            }
+            .search-button {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 40px;
+                background: transparent;
+                border: none;
+                width: 40px;
+                outline: 0;
+                color: $paragraph-color;
+                transition: $transition;
+
+                &:hover, &:focus {
+                    color: $optional-color;
+                }
+            }
+        }
+    }
+}
+// Mobile Navbar
+@media only screen and (max-width: 767px) {
+    .navbar-area {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+
+        &.is-sticky {
+            border-bottom: none;
+            box-shadow: 0 7px 13px 0 rgba(0, 0, 0, .1);
+            padding: {
+                top: 5px;
+                bottom: 5px;
+            };
+        }
+    }
+    .evolta-nav {
+        padding: {
+            top: 15px;
+            bottom: 15px;
+            right: 0;
+            left: 0;
+        };
+        .navbar {
+            .navbar-nav {
+                margin-left: 0;
+                padding: 0 20px 12px;
+
+                .nav-item {
+                    padding: {
+                        top: 10px;
+                        bottom: 10px;
+                    };
+                    a {
+                        margin: {
+                            left: 0;
+                            right: 0;
+                        };
+                        padding: {
+                            top: 0;
+                            bottom: 0;
+                        };
+                    }
+                    .dropdown-menu {
+                        top: 0 !important;
+                        left: 0!important;
+                        right: 0!important;
+                        position: relative;
+                        width: 100%;
+                        opacity: 1;
+                        visibility: visible;
+                        margin-top: 15px !important;
+                        display: none;
+                        padding: {
+                            top: 10px;
+                            bottom: 10px;
+                        };
+                        &.show {
+                            display: block;
+                            top: 0 !important;
+                        }
+                    }
+                }
+            }
+            .others-options {
+                margin-left: 20px;
+
+                .option-item {
+                    margin-left: 0;
+                }
+            }
+            #navbarSupportedContent {
+                margin-top: 15px;
+                background-color: $black-color;
+                padding: {
+                    top: 8px;
+                    bottom: 15px;
+                };
+            }
+        }
+    }
+    .search-overlay {
+        &.search-popup {
+            width: 290px;
+            right: auto;
+            left: -20px;
+        }
+    }
+}
+
+// iPad Navbar
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .evolta-nav {
+        .navbar {
+            .others-options {
+                display: none;
+            }
+        }
+    }
+}
